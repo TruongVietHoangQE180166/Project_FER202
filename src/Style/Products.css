@@ -1,0 +1,60 @@
+/* Card Container */
+.filter-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  height: 830px;
+}
+
+/* Filter section titles */
+.filter-title, .filter-subtitle {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Search form */
+
+
+/* Filter checkbox styling */
+.filter-checkbox .form-check-label {
+  color: #555;
+}
+
+.filter-checkbox .form-check-input {
+  accent-color: #6c757d;
+}
+
+/* Clear Filters Button */
+.clear-filters-btn {
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.clear-filters-btn:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Space between sections */
+.filter-card .mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+
+  .xxx{
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold; /* Đậm chữ */
+  color: #333; /* Màu chữ */
+  
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Chữ hoa */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+  border-bottom: 2px solid #f2f2f2; /* Đường viền dưới */
+  padding-bottom: 10px; /* Khoảng cách dưới chữ */
+  }

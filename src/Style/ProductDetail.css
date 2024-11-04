@@ -1,0 +1,33 @@
+.product-detail .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .product-detail .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .product-detail .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .product-detail .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .product-detail .text-primary {
+    color: red !important;
+  }
+  
+  .product-detail .text-muted {
+    color: #6c757d !important;
+  }
+  
+  .product-detail .text-warning {
+    color: #ffc107 !important;
+  }
+  

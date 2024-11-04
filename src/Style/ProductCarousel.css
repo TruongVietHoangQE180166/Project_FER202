@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+  .product-col {
+    flex: 0 0 25%; /* Adjust this based on how many items you want to show */
+    max-width: 25%; /* Ensure the column does not exceed this width */
+  }
+
+.product-card {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out; /* Added transition for hover effect */
+  height: 100%; /* Ensure all cards are the same height */
+  width: 240px;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Hover effect to slightly enlarge the card */
+}
+
+.badge1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.product-tumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Slightly increased height for larger images */
+  background-color: #f8f8f8;
+}
+
+.product-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-category {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-details h4 {
+  font-size: 20px; /* Ensure the title size is reasonable */
+  height: 40px; /* Fixed height for product titles */
+  line-height: 1.2em; /* Adjust line height for better alignment */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent the title from breaking to a new line */
+  margin-bottom: 10px;
+}
+
+.product-details h4 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.product-details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-bottom-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.product-price {
+  font-size: auto;
+  color: red;
+}
+
+.product-price small {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.product-links a {
+  margin-left: 10px;
+  color: #888;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.product-links a:hover {
+  color: red;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.carousel-row {
+  display: flex;           /* Đảm bảo các cột nằm trên một hàng */
+  flex-wrap: nowrap;        /* Không cho phép xuống dòng */
+  overflow-x: auto;         /* Cuộn theo chiều ngang nếu không đủ chỗ */
+  padding: 10px 0;          /* Khoảng đệm trên dưới */
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 1px;
+}
+
+.carousel-btn.next {
+  right: 1px;
+}
+
+.product-card {
+  flex: 0 0 25%; /* Mỗi sản phẩm chiếm 25% chiều rộng */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.featured-title {
+  font-size: 2rem; /* Kích thước chữ lớn */
+  font-weight: bold; /* Đậm chữ */
+  color: #333; /* Màu chữ */
+  text-align: center; /* Căn giữa */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase; /* Chữ hoa */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+  
+  padding-bottom: 10px; /* Khoảng cách dưới chữ */
+  
+}
+
+  
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none;
+  }
+}
+
+/* Increase card size for better visibility */

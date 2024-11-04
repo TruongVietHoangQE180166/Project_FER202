@@ -1,0 +1,10 @@
+
+
+.carousel-image {
+    
+    height: 500px; /* Chiều cao của hình ảnh */
+    width: 100%; /* Đặt chiều rộng bằng 100% */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ khu vực */
+}
+
+  

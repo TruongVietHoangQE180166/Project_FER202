@@ -1,0 +1,43 @@
+/* Header dính trên cùng */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Tùy chỉnh cho mục navbar: hiển thị như các ô vuông sát nhau */
+.nav-item-custom {
+  background-color: white; /* Nền trắng mặc định */
+  color: black; /* Chữ đen */
+  padding: 1px; /* Khoảng cách bên trong */
+  margin: 10px; /* Sát nhau, không khoảng cách */
+  border: 1px solid transparent; /* Viền trong suốt */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  min-width: 100px; /* Đảm bảo các mục có kích thước đồng đều */
+  border-radius: 20px;
+}
+
+/* Khi di chuột vào: nền đen, chữ trắng */
+.nav-item-custom:hover {
+  background-color: rgb(184, 180, 180);
+  color: black;
+  border: 1px solid rgb(182, 174, 174); /* Thêm viền đen */
+}
+
+/* Đảm bảo các mục hiển thị ngang hàng */
+.navbar-nav {
+  display: flex;
+  flex-wrap: nowrap; /* Không xuống hàng */
+}
+
+/* Responsive: Hiển thị dọc trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .nav-item-custom {
+    width: 100%; /* Chiếm hết chiều rộng */
+    margin-bottom: 5px; /* Khoảng cách giữa các mục khi xếp dọc */
+  }
+}
